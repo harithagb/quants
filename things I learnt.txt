@@ -1,0 +1,2 @@
+Gaussian Copula:
+1. Maximums are Gumbel distributed
