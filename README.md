@@ -5,6 +5,6 @@ Done:
 Copulae
 
 In Progress:
-Dynamic Programming (learning for the first time)
-Technical indicator functions
-Pairs Trading
+- Dynamic Programming (learning for the first time)
+- Technical indicator functions
+- Pairs Trading
