@@ -1,39 +1,24 @@
-Project Title: Predicting Corporate Bankruptcy Risk Using Financial Ratios
+# Bankruptcy Risk Prediction
 
-Overview:
-This project predicts bankruptcy risk using supervised learning models applied to a labeled dataset of companies with financial indicators. The objective is binary classification: bankrupt vs. non-bankrupt firms.
+## Project Title  
+Predicting Corporate Bankruptcy Risk Using Financial Ratios
 
-Project Structure:
+## Overview  
+This project predicts the risk of bankruptcy for companies based on financial ratios. The dataset is highly imbalanced, and the modeling pipeline includes preprocessing, SMOTE for oversampling, feature selection, and multiple classification models.
 
-bankruptcy_oya.ipynb: Main notebook with EDA, feature selection, model building, and evaluation.
 
-bankruptcy_helper.py: Functions for scaling, feature engineering, model scoring.
+## Key Techniques  
+- Feature selection and transformation
+- Handling class imbalance with SMOTE
+- Ensemble models: Random Forest, XGBoost
+- Evaluation metrics: ROC-AUC, F1, Confusion Matrix
 
-Uses ensemble methods, logistic regression, and neural nets for comparison.
+## How to Run  
+1. Open `bankruptcy_oya.ipynb` in a Jupyter environment.
+2. Ensure dependencies are installed (`xgboost`, `imbalanced-learn`, `sklearn`).
+3. Execute cells sequentially to preprocess, train, and evaluate models.
 
-Core Techniques:
-
-SMOTE for class imbalance
-
-Feature selection (correlation, domain relevance)
-
-Logistic Regression, Random Forest, XGBoost, MLP
-
-Cross-validation, confusion matrix, F1 score
-
-How to Run:
-
-Install required packages (scikit-learn, xgboost, imblearn).
-
-Open bankruptcy_oya.ipynb and run all cells.
-
-Modify helper functions as needed in bankruptcy_helper.py.
-
-Extensions:
-
-Explainability with SHAP or LIME
-
-Time-series modeling for financial health tracking
-
-Deploy in financial risk dashboards
-
+## Possible Extensions  
+- Add SHAP/LIME for feature explainability
+- Incorporate macroeconomic indicators
+- Train time-aware models (e.g., survival models, LSTMs)
