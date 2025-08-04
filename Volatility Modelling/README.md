@@ -23,10 +23,6 @@ To explore techniques for modeling implied volatility smiles across strikes and 
 - Robust fitting techniques with interpretability
 - Framework adaptable to real-world option surfaces
 
-## Files
-- `HarithaGB_VolModels.ipynb`: Main analysis notebook
-- `data/`: Assumed directory for public/simulated data
-
 ## Dependencies
 - Python 3.9+
 - `pandas`, `numpy`, `matplotlib`, `scipy`, `statsmodels`
