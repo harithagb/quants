@@ -1,6 +1,4 @@
-# Create a new README.md and .txt file for the volatility smile modeling project
-
-readme_content = """# Volatility Smile Modeling and Implied Volatility Surface Fitting
+# Volatility Smile Modeling and Implied Volatility Surface Fitting
 
 This project demonstrates how to model and fit volatility smiles using option market data. The goal is to build a robust implied volatility surface and assess the quality of the fit using public or synthetic data.
 
