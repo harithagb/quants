@@ -1,26 +1,34 @@
-# Volatility Smile Modeling and Implied Volatility Surface Fitting
+# Volatility Modeling in the Two-Factor Bergomi Framework
 
-This project demonstrates how to model and fit volatility smiles using option market data. The goal is to build a robust implied volatility surface and assess the quality of the fit using public or synthetic data.
+This project explores volatility surface modeling for SPX and VIX derivatives using the two-factor Bergomi stochastic volatility model. Implemented under the guidance of Prof. Julien Guyon, it emphasizes both theoretical understanding and practical implementation of smile dynamics and derivative pricing.
 
 ## Objective
-To explore techniques for modeling implied volatility smiles across strikes and maturities, using a combination of analytical models and numerical optimization.
+To simulate and understand the behavior of SPX and VIX smiles under the two-factor Bergomi model, and to analyze the effects of various model parameters such as volatility-of-volatility, mean reversion, and correlation.
 
 ## Methodology
-- **Data**: Synthetic or publicly available options data across different strikes and maturities.
-- **Smile Modeling**:
-  - Fit implied volatility curves using quadratic and cubic splines.
-  - Regularize fits to reduce overfitting and ensure smoothness.
-- **Surface Construction**: Extend across maturities to build a vol surface.
-- **Diagnostics**:
-  - Visual plots of fitted vs market IVs
-  - Residual error metrics
-  - Commentary on extrapolation behavior
+- **Model**: Two-factor Bergomi stochastic volatility model.
+- **Simulation**: 
+  - Generate SPX volatility smiles across strikes using Monte Carlo.
+  - Vary correlation matrices, VoV, and mean reversion speed to examine smile sensitivity.
+- **Techniques**:
+  - Cholesky decomposition for simulating correlated Brownian motions.
+  - Gauss-Hermite quadrature applied to VIX option pricing.
+  - Parameter stress testing for smile shape dynamics.
 
-## Highlights
-- Clean illustration of volatility smile behavior
-- Robust fitting techniques with interpretability
-- Framework adaptable to real-world option surfaces
+## Additional Work
+- A separate notebook in this directory explores **particle-based calibration methods** for the two-factor Bergomi model. This is currently in progress.
+
+## Files
+- `0c7fd819-e561-4771-8c69-a7b7afb74736.ipynb`: Main notebook for SPX and VIX smile simulations.
+- `particle_calibration.ipynb` (WIP): Work-in-progress notebook for particle filter–based calibration.
 
 ## Dependencies
 - Python 3.9+
-- `pandas`, `numpy`, `matplotlib`, `scipy`, `statsmodels`
+- `numpy`, `pandas`, `matplotlib`, `scipy`
+
+## Credits
+This project was developed under the supervision of Prof. Julien Guyon as part of advanced volatility modeling coursework.
+
+---
+
+This project uses simulated data and does not rely on any proprietary datasets.
