@@ -1,10 +1,2 @@
 # quants
-My repo of things I've tried to learn during my graduate degree. NYU MFE 2025.
-
-Done:
-Copulae
-
-In Progress:
-- Dynamic Programming (learning for the first time)
-- Technical indicator functions
-- Pairs Trading
+A repo of interesting projects from my NYU MFE program. Several projects are not listed here, but these are just the handful that I frequently send to recruiters/PMs.
